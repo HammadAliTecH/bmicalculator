@@ -1,4 +1,5 @@
 function sub(){
+    event.preventDefault();
     var in1=Number(document.getElementById("1").value);
     var in2=Number(document.getElementById("2").value);
     var in7=in2*0.3048;
@@ -24,3 +25,4 @@ function sub(){
             document.writeln("Error 404");
         }
 }
+

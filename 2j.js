@@ -1,4 +1,5 @@
 function jk(){
+    event.preventDefault();
     var in11=Number(document.getElementById("11").value);
     var in22=Number(document.getElementById("22").value);
     var in8=in22*12;

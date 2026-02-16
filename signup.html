@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp_Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-papn7jV/x..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+    body
+    {
+     margin: 0px;
+     padding: 0px;
+    }
+    .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+ /* Outer Circle */
+.outer{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(63,167,201,0.25) 0%,
+        rgba(52, 204, 255, 0.25) 50%,
+        rgba(255,255,255,0.9) 100%
+    );
+
+    border: 1px solid #32c2f1;
+
+    /* Hide border only from bottom part */
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        black 0%,
+        black 80%,
+        transparent 100%
+    );
+    mask-image: linear-gradient(
+        to bottom,
+        black 0%,
+        black 60%,
+        transparent 100%
+    );
+    
+}
+
+
+/* Inner Circle */
+.inner{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#32c2f1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:18px;
+    font-family:Arial, sans-serif;
+    letter-spacing:3px;
+ 
+}
+.google_btn_round
+{
+    border-radius: 50px;
+    background-color: rgb(241, 241, 241);
+    border: none;
+    font-size: 14px;
+   
+}
+.input_rounded
+{
+    border-radius: 50px;
+}
+.input_rounded_button
+{
+     border-radius: 50px;
+      background:#32c2f1;
+}
+.card-rounded
+{
+    border-radius: 30px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.lower_sign_up_text
+{
+    font-size: 13px;
+}
+.sign_here
+{
+    color: #32c2f1;
+    text-decoration: none;
+    cursor: pointer;
+}
+input:focus
+{
+   border: none;
+   outline: none;
+   box-shadow: none;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+
+    border-radius: 5px;
+}
+
+.input-wrapper input {
+    padding-left: 40px;   /* space for the icon */
+    padding-right: 10px;  /* optional */
+}
+
+.input-wrapper .left-icon {
+    position: absolute;
+    left: 12px;          /* distance from left edge */
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    pointer-events: none; /* so click goes to input */
+    font-size: 16px;
+}
+.input-wrapper .right-icon {
+    position: absolute;
+    right: 12px;       /* distance from right edge */
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+}
+.lorem_font
+{
+    font-size: 11px;
+}
+
+</style>
+<body>
+    <div class="conatiner-fluid">
+        <div class="row ">
+            <div class="col-12 col-lg-6 col-md-6 ps-5">
+             <div class="mt-4" ><img class="h-50 w-50" src="template_pic.JPG" alt=""></div>
+             <h1 class="w-75" >Welcome to HSE Organisation</h1>
+             <p class="mt-4 text-secondary lorem_font w-75" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis magnam minus veniam provident, ipsa dolor laudantium debitis nulla natus ducimus doloribus quos totam perspiciatis, adipisci obcaecati quasi possimus dolore atque!</p>
+            </div>
+           <div class="col-12 col-lg-6 col-md-6 d-flex justify-content-center align-items-center h-100 ">
+             <div class="card w-100 pt-3 card-rounded w-md-100 h-100 mt-3 mb-3">
+            <div class="d-flex justify-content-center" >
+            <div class="outer">
+             <div class="inner">HSE</div>
+             </div>
+            </div>
+              <h2  class="d-flex justify-content-center mt-3" >Sign up</h2>
+              <p class="text-center" >Create your account, please complete your personal information</p>
+             <div class="d-flex justify-content-center mt-3" >
+                 <button class="form-control w-100 google_btn_round mx-4 py-2" >
+                      <i class="fab fa-google"></i>
+                    Sign in with Google</button>
+             </div>
+             <div class="d-flex justify-content-center align-items-center gap-3 mt-2"  >
+               <hr class="w-50 ms-4" > or  <hr class="w-50 me-4" > 
+             </div>
+            <div class="d-flex justify-content-center gap-2 mx-4" >
+                <div class="w-50" >
+                <label for="First name">First name</label>
+                <input class="form-control input_rounded" type="text" name="" id="" placeholder="Your first name">
+                </div>
+                <div class="w-50" >
+                <label for="First name">Last name</label>
+                <input class="form-control input_rounded" type="text" name="" id="" placeholder="Your last name">
+                </div>
+            </div>
+           
+                
+                <div class=" mx-4 pe-2 mt-3" >
+                 <label for="First name">Enter your email</label>
+                <div class="input-wrapper">
+                <i class="fa-solid fa-envelope left-icon"></i>
+                <input class="form-control input_rounded " type="text" name="" id="" placeholder="Your email address">
+                </div></div>
+
+                 <div class=" mx-4 pe-2 mt-3" >
+                <label for="First name">Create your password</label>
+                 <div class="input-wrapper">
+                 <i class="fa-solid fa-lock left-icon"></i>
+                <input class="form-control input_rounded " type="password" name="" id="" placeholder="Create new password">
+                <i id="eye" class="fa-solid fa-eye right-icon"></i>
+                </div></div>
+
+                 <div class=" mx-4 pe-2 mt-3" >
+                <label for="First name">Repeat your password</label>
+                <div class="input-wrapper">
+                 <i class="fa-solid fa-lock left-icon"></i>
+                <input class="form-control input_rounded " type="password" name="" id="" placeholder="Repeat password">
+                <i id="eye" class="fa-solid fa-eye right-icon"></i>
+                </div></div>
+
+                      <div class=" mx-4 pe-2 mt-3" >
+                <button class="form-control btn input_rounded_button text-light "  name="" id="" >Continue</button>
+                </div>
+            
+                <div class="d-flex justify-content-center gap-1 mt-2 lower_sign_up_text" >
+                    <p>Have an account? Please</p>
+                    <a class="sign_here" >Sign in here</p>
+                </div>
+               
+
+
+             </div>
+            </div>
+        </div>
+    </div>
+    <script>
+document.querySelectorAll('.input-wrapper').forEach(wrapper => {
+    const input = wrapper.querySelector('input');
+    const eye = wrapper.querySelector('.right-icon');
+
+    if (eye) {
+        eye.addEventListener('click', () => {
+            if (input.type === 'password') {
+                input.type = 'text';
+                eye.classList.remove('fa-eye');
+                eye.classList.add('fa-eye-slash');
+            } else {
+                input.type = 'password';
+                eye.classList.remove('fa-eye-slash');
+                eye.classList.add('fa-eye');
+            }
+        });
+    }
+});
+</script>
+
+</body>
+</html>
+
+
